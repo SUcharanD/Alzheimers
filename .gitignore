@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.env.*
+.venv/
+venv/
+.DS_Store
+data/mri_slices/*
+!data/mri_slices/README.md
+checkpoints/
+*.pt
+*.pth

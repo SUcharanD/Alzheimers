@@ -1,0 +1,42 @@
+# ── PyTorch (install separately via pip with CUDA url, not from this file) ──
+# torch>=2.2.0
+# torchvision>=0.17.0
+# torchaudio>=2.2.0
+
+# ── Deep learning utilities ──────────────────────────────────────────────────
+timm>=0.9.12               # EfficientNetB2, pretrained backbones
+monai>=1.3.0               # medical imaging transforms, class-balanced sampler
+torchmetrics>=1.3.0        # AUC, F1, accuracy during training
+
+# ── MRI preprocessing ────────────────────────────────────────────────────────
+SimpleITK>=2.3.0           # skull stripping, N4 bias field correction
+nibabel>=5.2.0             # read NIfTI format MRI files
+pydicom>=2.4.3             # read DICOM format MRI files
+
+# ── Image processing & augmentation ─────────────────────────────────────────
+opencv-python>=4.9.0       # image read/write/resize
+albumentations>=1.4.0      # fast augmentation (rotation, flip, zoom)
+scikit-image>=0.22.0       # SSIM computation for slice selection
+
+# ── Data & ML utilities ──────────────────────────────────────────────────────
+numpy>=1.26.0              # array operations
+pandas>=2.2.0              # CSV handling, patient metadata
+scikit-learn>=1.4.0        # train/val/test split, confusion matrix, AUC
+imbalanced-learn>=0.12.0   # weighted sampler utilities
+
+# ── Visualization ────────────────────────────────────────────────────────────
+matplotlib>=3.8.0          # plots, MRI slice display
+seaborn>=0.13.0            # confusion matrix heatmaps
+plotly>=5.20.0             # interactive training curves
+grad-cam>=1.5.0            # Grad-CAM heatmaps on MRI slices
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+jupyter>=1.0.0
+ipykernel>=6.29.0
+ipywidgets>=8.1.0          # progress bars inside notebooks
+
+# ── Experiment tracking (optional) ───────────────────────────────────────────
+wandb>=0.16.0              # set USE_WANDB=True in config.py to activate
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+tqdm>=4.66.0               # progress bars during training
